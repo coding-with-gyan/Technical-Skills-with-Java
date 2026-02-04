@@ -48,9 +48,6 @@ sc.close();
 
 
 
-//Given an integer array A of size N. In 1 sec you can increase the value of 1 element by 1.find the minimum 
-//time in sec to make all the elements of the array equal
-
 
 
 
