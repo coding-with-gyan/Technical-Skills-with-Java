@@ -25,4 +25,56 @@ public class FifthhClass{
         if(found==1){
             System.out.println("True");}else{
             System.out.println("False");
+
         }sc.close();}}
+
+
+
+
+
+
+
+
+
+// Given an array A. find second largest value in the array A.
+
+
+import java.util.Scanner;
+
+public class SecondLargest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of array: ");
+        int size = sc.nextInt();
+        int i;
+        int[] arr = new int[size];
+        System.out.println("enter" + size + "Elements");
+        for (i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int max=0;
+        int secondmax=0;
+        for (i=0;i<size;i++){
+            if(arr[i]>max){
+                secondmax=max;
+                max=arr[i];
+            }else if(arr[i]>secondmax && arr[i]!=max){
+                secondmax=arr[i];
+            }
+        }
+        System.out.println("secondlargest: "+secondmax);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
